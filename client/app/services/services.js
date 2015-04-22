@@ -15,7 +15,14 @@ angular.module('shortly.services', [])
         data.links = result.data;
         callback(result.data);
       });
+    },
+    addLink: function(){
+      return $http({
+        method: 'POST',
+        url: '/api/links',
+      })
     }
+
   };
 })
 
