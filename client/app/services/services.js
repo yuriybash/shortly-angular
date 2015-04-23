@@ -16,11 +16,12 @@ angular.module('shortly.services', [])
         callback(result.data);
       });
     },
-    addLink: function(){
+    addLink: function(link){
       return $http({
         method: 'POST',
         url: '/api/links',
-      })
+        data: {url: link}
+      });
     }
 
   };

@@ -1,5 +1,6 @@
-<div id='container' ng-controller="shortly.shorten">
-<!-- Your code here -->
-<input ng-model="link">
+<div id='container' ng-controller="ShortenController">
+  <input ng-model="link" ng-init=''>
+  <button ng-click="addLink(link); link = '';" >Shorten</button>
+
 
 </div>
