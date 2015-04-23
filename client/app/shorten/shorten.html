@@ -1,6 +1,5 @@
 <div id='container' ng-controller="ShortenController">
   <input ng-model="link" ng-init=''>
-  <button ng-click="addLink(link); link = '';" >Shorten</button>
-
-
+  <button ng-click="tryToAddLink(link); link = '';" >Shorten</button>
+  <div ng-model='fail' ng-init=''>{{fail}}</div>
 </div>
