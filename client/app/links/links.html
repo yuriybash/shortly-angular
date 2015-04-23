@@ -3,16 +3,15 @@
     <img src="../assets/redirect_icon.png">
     <div class='info'>
       <div class='visits'>
-        <span class='count'>{{link.visits}}</span>
+        <span class='count'>{{link.visits}} <br> Visits</span>
       </div>
       <div class='title'>
         {{link.title}}
       </div>
       <div class='original'>
-        {{link.url}}<br> <a href='{{link.base_url+\'/\'+link.code}}'>{{link.base_url+ '/' +  link.code}}
+        {{link.url}}<br> <a ng-href='{{link.base_url}}+\'/\'+{{link.code}}'>{{link.base_url+ '/' +  link.code}}
       </div>
     </div>
-
 
 
 
